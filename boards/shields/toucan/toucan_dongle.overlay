@@ -1,17 +1,13 @@
-#include <input/processors.dtsi>
-#include <dt-bindings/zmk/input_transform.h>
-#include <dt-bindings/zmk/matrix_transform.h>
 #include "toucan.dtsi"
-
-&default_layout {
-    transform = <&default_transform>;
-};
 
 / {
     chosen {
         zmk,kscan = &mock_kscan;
         zmk,physical-layout = &default_layout;
     };
+};
+
+/ {
 
     mock_kscan: mock_kscan_0 {
         compatible = "zmk,kscan-mock";
