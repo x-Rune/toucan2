@@ -1,6 +1,9 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "toucan.dtsi"
 
+&default_layout {
+    transform = <&default_transform>;
+};
 
 / {
     chosen {
@@ -30,13 +33,4 @@
                                 RC(3,3) RC(3,4) RC(3,5)  RC(3,6) RC(3,7) RC(3,8)
         >;
     };
-
-    default_layout: default_layout {
-        transform = <&default_transform>;
-    };
-
-    chosen {
-        zmk,kscan = &mock_kscan;
-        zmk,physical-layout = &default_layout;
-    };    
 };
