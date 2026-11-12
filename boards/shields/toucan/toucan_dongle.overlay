@@ -1,4 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <dt-bindings/zmk/kscan_mock.h>
 #include "toucan.dtsi"
 
 &default_layout {
@@ -13,9 +14,6 @@
 
     mock_kscan: mock_kscan_0 {
         compatible = "zmk,kscan-mock";
-        /delete-property/ col-gpios;
-        /delete-property/ row-gpios;
-        /delete-property/ diode-direction;
         columns = <0>;
         rows = <0>;
         events = <0>;
