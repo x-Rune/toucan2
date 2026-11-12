@@ -10,6 +10,9 @@ config ZMK_SPLIT_ROLE_CENTRAL
 config ZMK_SPLIT
     default y
 
+config ZMK_POINTING
+    default y
+
 # Set this to the number of peripherals your dongle will have.
 # For a unibody, this would be 1. If you have left and right halves, set it to 2, etc.
 config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
@@ -28,7 +31,7 @@ endif
 if SHIELD_TOUCAN_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Toucan"
+    default "Toucan 2"
 
 config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
     default y
@@ -45,6 +48,9 @@ config SPI
 
 config ZMK_SPLIT
     default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default n
 
 config ZMK_POINTING
     default y
