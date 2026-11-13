@@ -37,3 +37,15 @@
         transform = <&default_transform>;
     };
 };
+
+&kscan0 {
+    status = "disabled";
+};
+
+&trackpad_listener {
+    status = "okay";
+};
+
+&zip_zoom_mapper {
+    status = "okay";
+};
