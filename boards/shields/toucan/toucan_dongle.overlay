@@ -2,10 +2,6 @@
 #include <dt-bindings/zmk/kscan_mock.h>
 #include "toucan.dtsi"
 
-&default_layout {
-    transform = <&default_transform>;
-};
-
 / {
     chosen {
         zmk,kscan = &mock_kscan;
