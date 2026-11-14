@@ -5,7 +5,7 @@
 / {
     chosen {
         zmk,kscan = &mock_kscan;
-        zmk,physical-layout = &dongle_layout;
+        zmk,physical-layout = &default_layout;
     };
 
     mock_kscan: mock_kscan_0 {
@@ -31,11 +31,6 @@
         >;
     };
 
-    dongle_layout: physical_layout_0 {
-        compatible = "zmk,physical-layout";
-        display-name = "Dongle Layout";
-        transform = <&default_transform>;
-    };
 };
 
 &kscan0 {
