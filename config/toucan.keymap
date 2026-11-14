@@ -105,6 +105,12 @@
             layers = <0>;
         };
 
+        right-click {
+            bindings = <&mkp RCLK>;
+            key-positions = <2 4>;
+            layers = <0>;
+        };
+
         backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <26 14>;
